@@ -33,6 +33,8 @@
 		CEEF4C5A1E543E37007DDFF2 /* QNUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF4C461E543E37007DDFF2 /* QNUploadManager.m */; };
 		CEEF4C5B1E543E37007DDFF2 /* QNUploadOption.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF4C491E543E37007DDFF2 /* QNUploadOption.m */; };
 		CEEF4C5C1E543E37007DDFF2 /* QNUpToken.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF4C4B1E543E37007DDFF2 /* QNUpToken.m */; };
+		CEEF4C951E54435F007DDFF2 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEF4C941E54435F007DDFF2 /* libz.1.2.5.tbd */; };
+		F76AE6981AF07BE78E4549A3 /* libPods-BHQiNiuUploadHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE821D39EF25F6AC28CD47A /* libPods-BHQiNiuUploadHelper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F94BF5FEC0B735B5791AA7 /* Pods-BHQiNiuUploadHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BHQiNiuUploadHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BHQiNiuUploadHelper/Pods-BHQiNiuUploadHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		1CE821D39EF25F6AC28CD47A /* libPods-BHQiNiuUploadHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BHQiNiuUploadHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D707E1ACA96E4737DA19A4 /* Pods-BHQiNiuUploadHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BHQiNiuUploadHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-BHQiNiuUploadHelper/Pods-BHQiNiuUploadHelper.release.xcconfig"; sourceTree = "<group>"; };
 		CEEF4B561E5404EC007DDFF2 /* BHQiNiuUploadHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHQiNiuUploadHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEF4B5A1E5404EC007DDFF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEEF4B5C1E5404EC007DDFF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +115,7 @@
 		CEEF4C491E543E37007DDFF2 /* QNUploadOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUploadOption.m; sourceTree = "<group>"; };
 		CEEF4C4A1E543E37007DDFF2 /* QNUpToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUpToken.h; sourceTree = "<group>"; };
 		CEEF4C4B1E543E37007DDFF2 /* QNUpToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUpToken.m; sourceTree = "<group>"; };
+		CEEF4C941E54435F007DDFF2 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEF4C951E54435F007DDFF2 /* libz.1.2.5.tbd in Frameworks */,
+				F76AE6981AF07BE78E4549A3 /* libPods-BHQiNiuUploadHelper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7274A7344E21B71F43394D1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05F94BF5FEC0B735B5791AA7 /* Pods-BHQiNiuUploadHelper.debug.xcconfig */,
+				45D707E1ACA96E4737DA19A4 /* Pods-BHQiNiuUploadHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CEEF4B4D1E5404EC007DDFF2 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +161,8 @@
 				CEEF4B721E5404EC007DDFF2 /* BHQiNiuUploadHelperTests */,
 				CEEF4B7D1E5404EC007DDFF2 /* BHQiNiuUploadHelperUITests */,
 				CEEF4B571E5404EC007DDFF2 /* Products */,
+				7274A7344E21B71F43394D1C /* Pods */,
+				DBC81E2A0CD9665F1A879583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +307,15 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		DBC81E2A0CD9665F1A879583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF4C941E54435F007DDFF2 /* libz.1.2.5.tbd */,
+				1CE821D39EF25F6AC28CD47A /* libPods-BHQiNiuUploadHelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,9 +323,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEEF4B831E5404EC007DDFF2 /* Build configuration list for PBXNativeTarget "BHQiNiuUploadHelper" */;
 			buildPhases = (
+				F70D073FF3ECF1179A115959 /* [CP] Check Pods Manifest.lock */,
 				CEEF4B521E5404EC007DDFF2 /* Sources */,
 				CEEF4B531E5404EC007DDFF2 /* Frameworks */,
 				CEEF4B541E5404EC007DDFF2 /* Resources */,
+				8EAB407F0A55F50625DA8709 /* [CP] Embed Pods Frameworks */,
+				F410D1F4C32DC2A74CE49491 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,6 +449,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EAB407F0A55F50625DA8709 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BHQiNiuUploadHelper/Pods-BHQiNiuUploadHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F410D1F4C32DC2A74CE49491 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BHQiNiuUploadHelper/Pods-BHQiNiuUploadHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F70D073FF3ECF1179A115959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEEF4B521E5404EC007DDFF2 /* Sources */ = {
@@ -589,6 +668,7 @@
 		};
 		CEEF4B841E5404EC007DDFF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F94BF5FEC0B735B5791AA7 /* Pods-BHQiNiuUploadHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6X9DMN9D4;
@@ -601,6 +681,7 @@
 		};
 		CEEF4B851E5404EC007DDFF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D707E1ACA96E4737DA19A4 /* Pods-BHQiNiuUploadHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L6X9DMN9D4;
