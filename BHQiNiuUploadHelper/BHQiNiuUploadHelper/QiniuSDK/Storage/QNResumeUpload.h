@@ -6,22 +6,24 @@
 //  Copyright (c) 2014年 Qiniu. All rights reserved.
 //
 
-#import "QNFileDelegate.h"
-#import "QNHttpDelegate.h"
-#import "QNUpToken.h"
-#import "QNUploadManager.h"
 #import <Foundation/Foundation.h>
+#import "QNUploadManager.h"
+#import "QNhttpDelegate.h"
+#import "QNUpToken.h"
 
+@class QNHttpManager;
 @interface QNResumeUpload : NSObject
 
-- (instancetype)initWithFile:(id<QNFileDelegate>)file
+- (instancetype)initWithData:(NSData *)data
+                    withSize:(UInt32)size
                      withKey:(NSString *)key
                    withToken:(QNUpToken *)token
        withCompletionHandler:(QNUpCompletionHandler)block
                   withOption:(QNUploadOption *)option
-                withRecorder:(id<QNRecorderDelegate>)recorder
+              withModifyTime:(NSDate *)time
+                withRecorder:(id <QNRecorderDelegate> )recorder
              withRecorderKey:(NSString *)recorderKey
-             withHttpManager:(id<QNHttpDelegate>)http
+             withHttpManager:(id <QNHttpDelegate> )http
            withConfiguration:(QNConfiguration *)config;
 
 - (void)run;

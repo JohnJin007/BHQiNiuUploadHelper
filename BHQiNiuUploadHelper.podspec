@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "BHQiNiuUploadHelper"
   s.version      = "1.0.0"
-  s.summary      = "BHQiNiuUploadHelper is a infinite scroll view spport all direction"
+  s.summary      = "BHQiNiuUploadHelper is a qiniu upload tool"
 
   s.description  = <<-DESC
                    A longer description of BHQiNiuUploadHelper in Markdown format.
